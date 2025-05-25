@@ -4,7 +4,7 @@ public typealias ExecuteCommandClientCapabilities = DynamicRegistrationClientCap
 
 public struct ExecuteCommandOptions: Codable, Hashable, Sendable {
 	public var workDoneProgress: Bool?
-	public var commands: [String]
+	public var commands: [String]?
 
 	public init(workDoneProgress: Bool? = nil, commands: [String]) {
 		self.workDoneProgress = workDoneProgress
